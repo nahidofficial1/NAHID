@@ -75,7 +75,7 @@ async function handleLogin(msg) {
       clientId: `session-${chatId}`
     }),
     puppeteer: {
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/nix/store/khk7xpgsm5insk81azy9d560yq4npf77-chromium-131.0.6778.204/bin/chromium',
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || require('puppeteer').executablePath(),
       headless: true,
       args: [
         '--no-sandbox',
