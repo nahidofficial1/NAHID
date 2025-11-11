@@ -1,0 +1,23 @@
+{
+  "name": "whatsapp-telegram-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp Number Checker Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["telegram", "bot", "whatsapp", "checker"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.x"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.11",
+    "node-telegram-bot-api": "^0.66.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.2"
+  }
+}
